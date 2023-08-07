@@ -1,0 +1,15 @@
+/* styles.css */
+
+.card {
+    transition: box-shadow 0.3s ease; /* Add transition to the box-shadow property */
+    /* OR */
+    /* transition: border 0.3s ease; */ /* Add transition to the border property */
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect on hover */
+    /* OR */
+    /* border: 1px solid #ccc; */ /* Add a border on hover */
+  }
+  
+ 

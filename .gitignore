@@ -1,0 +1,10 @@
+
+# Add the following lines to your .gitignore file:
+# Ignore node_modules directory
+node_modules/
+
+# Ignore system and editor files
+.DS_Store
+.vscode/
+*.sublime-*
+*.swp

@@ -1,0 +1,63 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f0f6fc;
+    color: #293241;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-container {
+    background-color: rgb(142, 171, 225);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 30px; /* Increase the margin */
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f0f6fc;
+  }
+  
+  .nav {
+    margin-top: 30px; /* Add some gap below the logo */
+  }
+  
+  .nav-item {
+    margin-bottom: 15px; /* Add gap between navigation items */
+  }
+  
+  .nav-link {
+    color: #293241;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .btn-logout {
+    color: #fff;
+    background-color: #df2834; /* Use red color for background */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    border-radius: 10px; /* Remove button border radius */
+    border: none;
+    margin-top: 28.9rem;
+  }
+  
+  .btn-logout:hover {
+    background-color: #c82333; /* Darker red background color on hover */
+  }
+  
+  /* Additional spacing for content below logo */
+  .content-container {
+    margin-top: 80px; /* Adjust as needed */
+  }
+  
