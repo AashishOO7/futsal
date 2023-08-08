@@ -1,24 +1,30 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { PlayerLoginService } from '../../../Service/PlayerService/PlayerLoginService';
-import { useAuth } from '../../../Service/PlayerService/AuthContext';
+import PlayerLoginService from '../../../Service/PlayerService/PlayerLoginService';
+
 function PlayerLogin() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // Track user login status
 
   const navigate = useNavigate();
-  
+
   const handlePlayerLogin = async (event) => {
     event.preventDefault();
 
     if (email && password) {
       try {
+ 
+    
         const userData = await PlayerLoginService(email, password);
-      
-      
+        setIsLoggedIn(true); // Set the login status to true
 
-        navigate('/playerprofile');
+        // You can store user data in localStorage or a global state management system (e.g., Redux) if needed
+       localStorage.setItem('userData', JSON.stringify(userData));
+       console.log("userData:", userData)
+
+        navigate('/playerdashboard');
       } catch (error) {
         setErrorMessage('Invalid email or password');
       }
